@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/_142sdp"
+    android:layout_height="@dimen/_170sdp"
+    android:layout_margin="@dimen/_5sdp"
+    android:background="@drawable/btn1"
+    android:orientation="vertical">
+
+    <ImageView
+        android:background="@color/itemInShimmer"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_gravity="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <TextView
+           android:background="@color/itemInShimmer"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:gravity="center"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:background="@color/itemInShimmer"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/red"
+            android:textSize="@dimen/_15sdp" />
+    </LinearLayout>
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/ID_pr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

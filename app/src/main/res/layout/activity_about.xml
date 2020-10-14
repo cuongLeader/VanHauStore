@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".AllActivity.about">
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_45sdp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:background="@drawable/gardient_color_2"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:gravity="center"
+                    android:text="Về chúng tôi"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/_15sdp" />
+
+               <RelativeLayout
+                   android:layout_width="@dimen/_50sdp"
+                   android:layout_alignParentRight="true"
+                   android:layout_height="match_parent">
+                   <ImageView
+                       android:id="@+id/cart"
+                       android:layout_width="@dimen/_45sdp"
+                       android:layout_height="@dimen/_45sdp"
+                       android:layout_alignParentRight="true"
+                       android:padding="@dimen/_5sdp"
+                       android:src="@drawable/cart" />
+                  <LinearLayout
+                      android:background="@drawable/btn5"
+                      android:layout_alignParentBottom="true"
+                      android:layout_alignParentRight="true"
+                      android:layout_width="@dimen/_15sdp"
+                      android:layout_margin="@dimen/_5sdp"
+                      android:layout_height="@dimen/_15sdp">
+                      <TextView
+                          android:id="@+id/amountOfCart"
+                          android:textSize="@dimen/_10sdp"
+                          android:text="0"
+                          android:gravity="center_horizontal"
+                          android:textColor="@color/text_black"
+                          android:layout_width="match_parent"
+                          android:layout_height="match_parent"/>
+                  </LinearLayout>
+               </RelativeLayout>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/nighsky">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#88FFFFFF">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_160sdp"
+                    android:layout_margin="@dimen/_30sdp"
+                    android:background="#222222">
+
+<!--                    <fragment xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--                        xmlns:tools="http://schemas.android.com/tools"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:id="@+id/map"-->
+<!--                        tools:context=".MapsActivity"-->
+<!--                        android:name="com.google.android.gms.maps.SupportMapFragment" />-->
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:background="@color/colorBottomNavigation">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_nav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:itemBackground="@color/colorBottomNavigation"
+            app:itemIconTint="@drawable/selector"
+            app:itemTextColor="@drawable/selector"
+            app:menu="@menu/menu_bottom" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".AllActivity.firstToSayHello">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_marginTop="@dimen/_100sdp"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:src="@drawable/funphone" />
+
+    <TextView
+        android:id="@+id/name_shop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:fontFamily="@font/bangers"
+        android:gravity="center"
+        android:text="Văn Hậu store"
+        android:textColor="#222222"
+        android:textSize="@dimen/_30sdp" />
+    <TextView
+        android:id="@+id/slogan"
+        android:text="Kính chào quý khách"
+        android:layout_marginLeft="@dimen/_50sdp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"/>
+</LinearLayout>

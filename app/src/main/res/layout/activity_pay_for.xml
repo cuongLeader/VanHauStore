@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gardient_color"
+    android:orientation="vertical"
+    tools:context=".AllActivity.payFor">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:gravity="center"
+        android:text="Thông tin của bạn"
+        android:textColor="#000000"
+        android:textSize="@dimen/_18sdp"
+        android:textStyle="italic" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:background="@drawable/border"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:textColor="@color/text_black"
+                android:id="@+id/tenKH"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:hint="họ tên "
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:textColor="@color/text_black"
+                android:id="@+id/sdtKH"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:hint="Số điện thoại "
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:textColor="@color/text_black"
+                android:id="@+id/emailKH"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:hint="Địa chỉ email "
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:textColor="@color/text_black"
+                android:id="@+id/DiachiKH"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:hint="Địa chỉ nhận hàng"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp">
+
+            <EditText
+                android:textColor="@color/text_black"
+                android:id="@+id/yeucauKH"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/_30sdp"
+                android:hint="yêu cầu của bạn"
+                android:inputType="text" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ontop"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_alignParentBottom="true">
+
+                    <TextView
+                        android:id="@+id/finaly"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="#FF0000"
+                        android:gravity="center"
+                        android:text="Xác nhận đặt hàng"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_below="@id/ontop"
+                    android:layout_alignParentBottom="true">
+
+                    <TextView
+                        android:id="@+id/backToContinue"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="Trở lại"
+                        android:textColor="#636363"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
